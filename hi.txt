@@ -1,0 +1,38 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/butter-hub/main/Butterhub.txt'))() 
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local ExploitGui = nil
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.476244301, 0)
+TextButton.Size = UDim2.new(0.0652020425, 0, 0.0457406789, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Gui"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = TextButton
+UIAspectRatioConstraint.AspectRatio = 2.571
+
+for i,v in pairs(game.CoreGui:GetChildren()) do
+	if string.lower(v.Name)=="frosty is cute" then
+		print("Found, the gui "..v.Name)
+		ExploitGui=v
+	else
+		print("Not Found, instead found "..v.Name)
+	end
+end
+
+TextButton.MouseButton1Click:Connect(function()
+	ExploitGui.Enabled=not ExploitGui.Enabled
+end)
