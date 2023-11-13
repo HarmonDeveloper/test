@@ -1,4 +1,15 @@
-Boş 1
-Boş 2
-Boş 3
-Boş 4
+Elif:yılmaz
+Caner:kaya
+Zeynep:demir
+Berkay:aksoy
+Melis:şahin
+Emre:arslan
+İrem:çelik
+Barış:kocaman
+Derya:doğan
+Mert:öztürk
+Ece:yılmaz
+Deniz:kaya
+Cem:demir
+Aylin:aksoy
+Burak:şahin
